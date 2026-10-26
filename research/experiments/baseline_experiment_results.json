@@ -1,0 +1,707 @@
+{
+  "experiment_name": "baseline_model_selection_v1",
+  "date": "2026-10-11",
+  "task_a_blooms_taxonomy": {
+    "validation_results": {
+      "Rule_Based_Heuristic": {
+        "accuracy": 0.9647,
+        "macro_f1": 0.965,
+        "weighted_f1": 0.9647,
+        "per_class": {
+          "Remember": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 14
+          },
+          "Understand": {
+            "precision": 0.9286,
+            "recall": 0.9286,
+            "f1": 0.9286,
+            "support": 14
+          },
+          "Apply": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Analyze": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 13
+          },
+          "Evaluate": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1": 0.9697,
+            "support": 16
+          },
+          "Create": {
+            "precision": 0.9286,
+            "recall": 0.9286,
+            "f1": 0.9286,
+            "support": 14
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            13,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            13
+          ]
+        ],
+        "labels": [
+          "Remember",
+          "Understand",
+          "Apply",
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      },
+      "TFIDF_LogisticRegression": {
+        "accuracy": 0.9647,
+        "macro_f1": 0.9645,
+        "weighted_f1": 0.9647,
+        "per_class": {
+          "Remember": {
+            "precision": 0.9333,
+            "recall": 1.0,
+            "f1": 0.9655,
+            "support": 14
+          },
+          "Understand": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Apply": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Analyze": {
+            "precision": 0.9286,
+            "recall": 1.0,
+            "f1": 0.963,
+            "support": 13
+          },
+          "Evaluate": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1": 0.9697,
+            "support": 16
+          },
+          "Create": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            13,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            13
+          ]
+        ],
+        "labels": [
+          "Remember",
+          "Understand",
+          "Apply",
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      },
+      "TFIDF_Calibrated_LinearSVM": {
+        "accuracy": 0.9647,
+        "macro_f1": 0.9645,
+        "weighted_f1": 0.9647,
+        "per_class": {
+          "Remember": {
+            "precision": 0.9333,
+            "recall": 1.0,
+            "f1": 0.9655,
+            "support": 14
+          },
+          "Understand": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Apply": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Analyze": {
+            "precision": 0.9286,
+            "recall": 1.0,
+            "f1": 0.963,
+            "support": 13
+          },
+          "Evaluate": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1": 0.9697,
+            "support": 16
+          },
+          "Create": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            13,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            13
+          ]
+        ],
+        "labels": [
+          "Remember",
+          "Understand",
+          "Apply",
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      },
+      "TFIDF_RandomForest": {
+        "accuracy": 0.9529,
+        "macro_f1": 0.9563,
+        "weighted_f1": 0.9542,
+        "per_class": {
+          "Remember": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 14
+          },
+          "Understand": {
+            "precision": 1.0,
+            "recall": 0.8571,
+            "f1": 0.9231,
+            "support": 14
+          },
+          "Apply": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          },
+          "Analyze": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 13
+          },
+          "Evaluate": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "support": 16
+          },
+          "Create": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 14
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            13,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            13
+          ]
+        ],
+        "labels": [
+          "Remember",
+          "Understand",
+          "Apply",
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      }
+    },
+    "champion_model": "TFIDF_LogisticRegression",
+    "held_out_test_results": {
+      "accuracy": 0.9186,
+      "macro_f1": 0.9193,
+      "weighted_f1": 0.9182,
+      "per_class": {
+        "Remember": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "Understand": {
+          "precision": 0.8125,
+          "recall": 0.8667,
+          "f1": 0.8387,
+          "support": 15
+        },
+        "Apply": {
+          "precision": 1.0,
+          "recall": 0.7692,
+          "f1": 0.8696,
+          "support": 13
+        },
+        "Analyze": {
+          "precision": 1.0,
+          "recall": 0.9231,
+          "f1": 0.96,
+          "support": 13
+        },
+        "Evaluate": {
+          "precision": 0.8947,
+          "recall": 1.0,
+          "f1": 0.9444,
+          "support": 17
+        },
+        "Create": {
+          "precision": 0.875,
+          "recall": 0.9333,
+          "f1": 0.9032,
+          "support": 15
+        }
+      },
+      "confusion_matrix": [
+        [
+          17,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          10
+        ]
+      ],
+      "labels": [
+        "Remember",
+        "Understand",
+        "Apply",
+        "Analyze",
+        "Evaluate",
+        "Create"
+      ]
+    }
+  },
+  "task_b_question_difficulty": {
+    "validation_results": {
+      "TFIDF_LogisticRegression": {
+        "accuracy": 0.9765,
+        "macro_f1": 0.9735,
+        "weighted_f1": 0.9763,
+        "per_class": {
+          "Easy": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1": 0.9697,
+            "support": 16
+          },
+          "Medium": {
+            "precision": 0.9762,
+            "recall": 1.0,
+            "f1": 0.988,
+            "support": 41
+          },
+          "Hard": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 28
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            1,
+            26,
+            1
+          ],
+          [
+            0,
+            0,
+            41
+          ]
+        ],
+        "labels": [
+          "Easy",
+          "Medium",
+          "Hard"
+        ]
+      },
+      "TFIDF_Calibrated_LinearSVM": {
+        "accuracy": 0.9765,
+        "macro_f1": 0.9735,
+        "weighted_f1": 0.9763,
+        "per_class": {
+          "Easy": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1": 0.9697,
+            "support": 16
+          },
+          "Medium": {
+            "precision": 0.9762,
+            "recall": 1.0,
+            "f1": 0.988,
+            "support": 41
+          },
+          "Hard": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 28
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            1,
+            26,
+            1
+          ],
+          [
+            0,
+            0,
+            41
+          ]
+        ],
+        "labels": [
+          "Easy",
+          "Medium",
+          "Hard"
+        ]
+      },
+      "TFIDF_RandomForest": {
+        "accuracy": 0.9765,
+        "macro_f1": 0.968,
+        "weighted_f1": 0.9767,
+        "per_class": {
+          "Easy": {
+            "precision": 0.8889,
+            "recall": 1.0,
+            "f1": 0.9412,
+            "support": 16
+          },
+          "Medium": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 41
+          },
+          "Hard": {
+            "precision": 1.0,
+            "recall": 0.9286,
+            "f1": 0.963,
+            "support": 28
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            2,
+            26,
+            0
+          ],
+          [
+            0,
+            0,
+            41
+          ]
+        ],
+        "labels": [
+          "Easy",
+          "Medium",
+          "Hard"
+        ]
+      }
+    },
+    "champion_model": "TFIDF_LogisticRegression",
+    "held_out_test_results": {
+      "accuracy": 0.9535,
+      "macro_f1": 0.9556,
+      "weighted_f1": 0.9537,
+      "per_class": {
+        "Easy": {
+          "precision": 0.9444,
+          "recall": 1.0,
+          "f1": 0.9714,
+          "support": 17
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 0.9231,
+          "f1": 0.96,
+          "support": 39
+        },
+        "Hard": {
+          "precision": 0.9062,
+          "recall": 0.9667,
+          "f1": 0.9355,
+          "support": 30
+        }
+      },
+      "confusion_matrix": [
+        [
+          17,
+          0,
+          0
+        ],
+        [
+          1,
+          29,
+          0
+        ],
+        [
+          0,
+          3,
+          36
+        ]
+      ],
+      "labels": [
+        "Easy",
+        "Medium",
+        "Hard"
+      ]
+    }
+  }
+}

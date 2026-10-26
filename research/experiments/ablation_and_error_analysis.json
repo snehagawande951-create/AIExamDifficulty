@@ -1,0 +1,406 @@
+{
+  "task_a_blooms_ablation": {
+    "Config_1_TFIDF_Lexical_Only": {
+      "val_accuracy": 0.9647,
+      "val_macro_f1": 0.9645,
+      "test_accuracy": 0.9186,
+      "test_macro_f1": 0.9193,
+      "test_weighted_f1": 0.9182,
+      "test_per_class": {
+        "Remember": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Understand": {
+          "precision": 0.8125,
+          "recall": 0.8667,
+          "f1": 0.8387
+        },
+        "Apply": {
+          "precision": 1.0,
+          "recall": 0.7692,
+          "f1": 0.8696
+        },
+        "Analyze": {
+          "precision": 1.0,
+          "recall": 0.9231,
+          "f1": 0.96
+        },
+        "Evaluate": {
+          "precision": 0.8947,
+          "recall": 1.0,
+          "f1": 0.9444
+        },
+        "Create": {
+          "precision": 0.875,
+          "recall": 0.9333,
+          "f1": 0.9032
+        }
+      }
+    },
+    "Config_2_TFIDF_Plus_Readability": {
+      "val_accuracy": 0.9412,
+      "val_macro_f1": 0.9411,
+      "test_accuracy": 0.9302,
+      "test_macro_f1": 0.9265,
+      "test_weighted_f1": 0.9296,
+      "test_per_class": {
+        "Remember": {
+          "precision": 0.8667,
+          "recall": 1.0,
+          "f1": 0.9286
+        },
+        "Understand": {
+          "precision": 0.9333,
+          "recall": 0.9333,
+          "f1": 0.9333
+        },
+        "Apply": {
+          "precision": 0.9167,
+          "recall": 0.8462,
+          "f1": 0.88
+        },
+        "Analyze": {
+          "precision": 0.9167,
+          "recall": 0.8462,
+          "f1": 0.88
+        },
+        "Evaluate": {
+          "precision": 0.9444,
+          "recall": 1.0,
+          "f1": 0.9714
+        },
+        "Create": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        }
+      }
+    },
+    "Config_3_TFIDF_Plus_CognitiveSyntax": {
+      "val_accuracy": 0.9647,
+      "val_macro_f1": 0.9653,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "test_weighted_f1": 1.0,
+      "test_per_class": {
+        "Remember": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Understand": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Apply": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Analyze": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Evaluate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Create": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "Config_4_Full_Hybrid_Ensemble": {
+      "val_accuracy": 0.9647,
+      "val_macro_f1": 0.9658,
+      "test_accuracy": 0.9884,
+      "test_macro_f1": 0.9881,
+      "test_weighted_f1": 0.9884,
+      "test_per_class": {
+        "Remember": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Understand": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        },
+        "Apply": {
+          "precision": 0.9286,
+          "recall": 1.0,
+          "f1": 0.963
+        },
+        "Analyze": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Evaluate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Create": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "Config_5_Leakage_Analysis_With_Marks": {
+      "val_accuracy": 0.9647,
+      "val_macro_f1": 0.9658,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "test_weighted_f1": 1.0,
+      "test_per_class": {
+        "Remember": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Understand": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Apply": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Analyze": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Evaluate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Create": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    }
+  },
+  "task_b_difficulty_ablation": {
+    "Config_1_TFIDF_Lexical_Only": {
+      "val_accuracy": 0.9765,
+      "val_macro_f1": 0.9735,
+      "test_accuracy": 0.9535,
+      "test_macro_f1": 0.9556,
+      "test_weighted_f1": 0.9537,
+      "test_per_class": {
+        "Easy": {
+          "precision": 0.9444,
+          "recall": 1.0,
+          "f1": 0.9714
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 0.9231,
+          "f1": 0.96
+        },
+        "Hard": {
+          "precision": 0.9062,
+          "recall": 0.9667,
+          "f1": 0.9355
+        }
+      }
+    },
+    "Config_2_TFIDF_Plus_Readability": {
+      "val_accuracy": 0.9882,
+      "val_macro_f1": 0.9899,
+      "test_accuracy": 0.9535,
+      "test_macro_f1": 0.9499,
+      "test_weighted_f1": 0.9533,
+      "test_per_class": {
+        "Easy": {
+          "precision": 0.8947,
+          "recall": 1.0,
+          "f1": 0.9444
+        },
+        "Medium": {
+          "precision": 0.9744,
+          "recall": 0.9744,
+          "f1": 0.9744
+        },
+        "Hard": {
+          "precision": 0.9643,
+          "recall": 0.9,
+          "f1": 0.931
+        }
+      }
+    },
+    "Config_3_TFIDF_Plus_CognitiveSyntax": {
+      "val_accuracy": 0.9882,
+      "val_macro_f1": 0.9838,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "test_weighted_f1": 1.0,
+      "test_per_class": {
+        "Easy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Hard": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "Config_4_Full_Hybrid_Ensemble": {
+      "val_accuracy": 0.9765,
+      "val_macro_f1": 0.9735,
+      "test_accuracy": 0.9767,
+      "test_macro_f1": 0.9802,
+      "test_weighted_f1": 0.9766,
+      "test_per_class": {
+        "Easy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Medium": {
+          "precision": 0.9512,
+          "recall": 1.0,
+          "f1": 0.975
+        },
+        "Hard": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        }
+      }
+    },
+    "Config_5_Leakage_Analysis_With_Marks": {
+      "val_accuracy": 0.9882,
+      "val_macro_f1": 0.9838,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "test_weighted_f1": 1.0,
+      "test_per_class": {
+        "Easy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Hard": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    }
+  },
+  "error_analysis": {
+    "blooms_misclassified_count": 7,
+    "blooms_misclassified_samples": [
+      {
+        "question_id": "Q_0023",
+        "subject": "Operating Systems",
+        "text": "Architect a reader-writer synchronization locking primitive that prevents writer starvation while ensuring maximum concurrency for concurrent readers. Provide the complete C/pthread pseudo-code.",
+        "actual": "Create",
+        "predicted": "Apply"
+      },
+      {
+        "question_id": "Q_0018",
+        "subject": "Operating Systems",
+        "text": "Calculate the average turnaround time and waiting time for Round Robin scheduling with time quantum q=4 for processes P1(burst=10), P2(burst=4), P3(burst=8), P4(burst=2).",
+        "actual": "Apply",
+        "predicted": "Remember"
+      },
+      {
+        "question_id": "Q_0016",
+        "subject": "Operating Systems",
+        "text": "Describe the role of the Translation Lookaside Buffer (TLB) in virtual memory paging.",
+        "actual": "Understand",
+        "predicted": "Remember"
+      },
+      {
+        "question_id": "Q_0072",
+        "subject": "Discrete Mathematics",
+        "text": "Assess whether a given algebraic structure (G, *) forms an Abelian group given the group axioms and generator properties.",
+        "actual": "Evaluate",
+        "predicted": "Apply"
+      },
+      {
+        "question_id": "Q_0034",
+        "subject": "Database Systems",
+        "text": "Design an enterprise database schema for a multi-vendor logistics platform in 3NF, including entity-relationship diagram, normalization verification, and transactional isolation guarantees.",
+        "actual": "Create",
+        "predicted": "Understand"
+      },
+      {
+        "question_id": "Q_0007",
+        "subject": "Data Structures",
+        "text": "Demonstrate the step-by-step construction of an AVL tree when inserting the keys: 15, 20, 24, 10, 13, 7, 30, 36, 25.",
+        "actual": "Apply",
+        "predicted": "Understand"
+      },
+      {
+        "question_id": "Q_0012",
+        "subject": "Data Structures",
+        "text": "Design an optimal dynamic programming algorithm to find the longest palindromic subsequence of a given string of length N in O(N^2) time and O(N) auxiliary space. Provide the recurrence relation and pseudo-code.",
+        "actual": "Create",
+        "predicted": "Apply"
+      }
+    ],
+    "difficulty_misclassified_count": 4,
+    "difficulty_misclassified_samples": [
+      {
+        "question_id": "Q_0023",
+        "subject": "Operating Systems",
+        "text": "Architect a reader-writer synchronization locking primitive that prevents writer starvation while ensuring maximum concurrency for concurrent readers. Provide the complete C/pthread pseudo-code.",
+        "actual": "Hard",
+        "predicted": "Medium"
+      },
+      {
+        "question_id": "Q_0018",
+        "subject": "Operating Systems",
+        "text": "Calculate the average turnaround time and waiting time for Round Robin scheduling with time quantum q=4 for processes P1(burst=10), P2(burst=4), P3(burst=8), P4(burst=2).",
+        "actual": "Medium",
+        "predicted": "Easy"
+      },
+      {
+        "question_id": "Q_0020",
+        "subject": "Operating Systems",
+        "text": "Analyze the producer-consumer problem using POSIX semaphores. Identify where a race condition or deadlock could occur if the wait operations on mutex and empty semaphores are inverted.",
+        "actual": "Hard",
+        "predicted": "Medium"
+      },
+      {
+        "question_id": "Q_0012",
+        "subject": "Data Structures",
+        "text": "Design an optimal dynamic programming algorithm to find the longest palindromic subsequence of a given string of length N in O(N^2) time and O(N) auxiliary space. Provide the recurrence relation and pseudo-code.",
+        "actual": "Hard",
+        "predicted": "Medium"
+      }
+    ]
+  }
+}

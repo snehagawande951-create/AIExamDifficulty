@@ -1,0 +1,63 @@
+{
+  "dataset_name": "Academic Examination Questions Benchmark (AEQ-Bench)",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "release_date": "2026-10-11",
+  "provenance": {
+    "source_type": "Academic_Exam_Corpus",
+    "domain": "Undergraduate Computer Science & Engineering",
+    "institutions": "Accredited University Mid-Term and Final Examination Archives",
+    "language": "en"
+  },
+  "dataset_statistics": {
+    "total_records": 570,
+    "subjects_covered": [
+      "Discrete Mathematics",
+      "Software Engineering",
+      "Engineering Physics",
+      "Database Systems",
+      "Data Structures",
+      "Operating Systems",
+      "Computer Networks",
+      "Artificial Intelligence"
+    ],
+    "marks_range": {
+      "min": 2.0,
+      "mean": 7.43,
+      "median": 6.0,
+      "max": 15.0
+    }
+  },
+  "splits": {
+    "train": {
+      "path": "data/processed/train.csv",
+      "count": 399,
+      "percentage": 70.0
+    },
+    "validation": {
+      "path": "data/processed/val.csv",
+      "count": 85,
+      "percentage": 14.9
+    },
+    "test_held_out": {
+      "path": "data/processed/test.csv",
+      "count": 86,
+      "percentage": 15.1
+    }
+  },
+  "label_schema": {
+    "blooms_taxonomy": {
+      "classes": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"],
+      "imbalance_ratio": 1.26
+    },
+    "question_difficulty": {
+      "classes": ["Easy", "Medium", "Hard"],
+      "imbalance_ratio": 2.36,
+      "continuous_score_range": [0.15, 0.94]
+    }
+  },
+  "limitations_and_ethics": {
+    "difficulty_construct": "Difficulty in this benchmark reflects an expert rubric where higher-order cognitive questions were designated Hard/Medium and factual recall Easy. Empirical student-perceived pass rate variations are investigated in qualitative error analysis.",
+    "privacy": "All institutional identification numbers, student names, and proprietary examination marks schemes have been anonymized."
+  }
+}

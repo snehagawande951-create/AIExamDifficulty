@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "model_type": "baseline",
+  "blooms_champion": "TFIDF_LogisticRegression",
+  "difficulty_champion": "TFIDF_LogisticRegression",
+  "blooms_test_accuracy": 0.9186,
+  "blooms_test_macro_f1": 0.9193,
+  "difficulty_test_accuracy": 0.9535,
+  "difficulty_test_macro_f1": 0.9556,
+  "blooms_classes": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "difficulty_classes": [
+    "Easy",
+    "Medium",
+    "Hard"
+  ],
+  "artifacts": {
+    "blooms_model": "blooms_model.joblib",
+    "difficulty_model": "difficulty_model.joblib"
+  }
+}

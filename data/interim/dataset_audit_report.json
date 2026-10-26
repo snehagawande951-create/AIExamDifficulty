@@ -1,0 +1,43 @@
+{
+  "dataset_path": "data/processed/exam_questions_benchmark.csv",
+  "total_records": 570,
+  "null_counts": {
+    "question_id": 0,
+    "paper_id": 0,
+    "subject": 0,
+    "section": 0,
+    "question_text": 0,
+    "marks": 0,
+    "blooms_level": 0,
+    "difficulty_level": 0,
+    "difficulty_score_continuous": 0,
+    "source_type": 0
+  },
+  "blooms_distribution": {
+    "Remember": 110,
+    "Apply": 97,
+    "Understand": 96,
+    "Analyze": 91,
+    "Create": 89,
+    "Evaluate": 87
+  },
+  "blooms_imbalance_ratio": 1.26,
+  "difficulty_distribution": {
+    "Hard": 267,
+    "Medium": 190,
+    "Easy": 113
+  },
+  "difficulty_imbalance_ratio": 2.36,
+  "subject_distribution": {
+    "Discrete Mathematics": 76,
+    "Software Engineering": 75,
+    "Engineering Physics": 73,
+    "Database Systems": 72,
+    "Data Structures": 71,
+    "Operating Systems": 71,
+    "Computer Networks": 66,
+    "Artificial Intelligence": 66
+  },
+  "exact_duplicates": 0,
+  "near_duplicates_sample_count": 0
+}
